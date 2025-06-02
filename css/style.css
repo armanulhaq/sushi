@@ -10,7 +10,6 @@
 @import url("sections/subscribe.css");
 @import url("sections/footer.css");
 
-/* CSS variables for reusablity across all files (including above imported) */
 :root {
     --playfair-display: "Playfair Display", serif;
     --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
@@ -183,7 +182,14 @@ a {
     .hero-image img {
         width: 100%;
 
-        transform: matrix(1, 0.05, 0, 1.25, 0, 0) !important;
+        transform: matrix(
+            1,
+            0.05,
+            0,
+            1.25,
+            0,
+            0
+        ) !important; /* 1: no horizontal scaling, 0.05 skew in y axis a little, 0 no horizontal skew, 1.25 a bit taller, 0,0 no movement in x and y */
     }
 }
 
